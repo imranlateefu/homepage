@@ -18,6 +18,111 @@
   </head>
 
   <body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="#top" aria-label="EduCareerInfo home">
+        <span class="brand-mark" aria-hidden="true">E*</span>
+        <span class="brand-name"><span class="edu">Edu</span><span class="career">Career</span><span class="info">Info</span><span class="star">*</span></span>
+      </a>
+      <span class="status"><span aria-hidden="true">●</span> Launching soon</span>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="eyebrow"><span class="pulse" aria-hidden="true"></span> A new journey for learners is coming</div>
+        <h1>Your Future.<br><span class="highlight">Your Career.<br>Your Success.</span></h1>
+        <p class="lead">
+          We’re building a student-focused platform to make education resources,
+          career guidance, and new opportunities easier to discover — all in one place.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://whatsapp.com/channel/0029VbCEaNB3WHTevaDUle0N" target="_blank" rel="noopener noreferrer">Stay connected <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#services">Explore what’s coming <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="preview" id="services" aria-label="Services coming soon">
+        <div class="preview-inner">
+          <div class="preview-top">
+            <span class="preview-label">What we’re bringing to you</span>
+            <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+          </div>
+          <div class="service-grid">
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">✦</div>
+              <h2>Mock Tests</h2>
+              <p>Practice and prepare with confidence for entry tests.</p>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">▤</div>
+              <h2>Study Materials</h2>
+              <p>Find useful learning resources in one place.</p>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">⌂</div>
+              <h2>Admissions</h2>
+              <p>Explore admission updates and application guidance.</p>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">◇</div>
+              <h2>Scholarships</h2>
+              <p>Discover opportunities to support your education.</p>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">↗</div>
+              <h2>Jobs &amp; Internships</h2>
+              <p>Keep an eye on opportunities for your next step.</p>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true">◎</div>
+              <h2>Career Guidance</h2>
+              <p>Make informed choices for your future.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="mission">
+        <span>Built for students</span><span class="sep" aria-hidden="true">•</span>
+        <span>Focused on opportunity</span><span class="sep" aria-hidden="true">•</span>
+        <strong>Guiding you toward a brighter future</strong>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; 2026 EduCareerInfo*. All rights reserved.</p>
+        <nav class="footer-links" aria-label="Official social media links">
+                      <a href="https://www.facebook.com/EduCareerInfo"
+               target="_blank" rel="noopener noreferrer">Facebook</a>
+                      <a href="https://www.instagram.com/EduCareerInfo/"
+               target="_blank" rel="noopener noreferrer">Instagram</a>
+                      <a href="https://www.youtube.com/@EduCareerInfo"
+               target="_blank" rel="noopener noreferrer">YouTube</a>
+                      <a href="https://www.linkedin.com/company/EduCareerInfo/"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                      <a href="https://whatsapp.com/channel/0029VbCEaNB3WHTevaDUle0N"
+               target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                  </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Small enhancement: enable smooth in-page navigation and show a console message.
+    document.addEventListener('DOMContentLoaded', () => {
+      const serviceSection = document.querySelector('#services');
+      document.querySelectorAll('a[href="#services"]').forEach((link) => {
+        link.addEventListener('click', (event) => {
+          if (serviceSection) {
+            event.preventDefault();
+            serviceSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+      console.info('EduCareerInfo* coming-soon page loaded.');
+    });
+  </script>
     <div id="root"></div>
 
     <script type="module" src="/src/main.jsx"></script>
